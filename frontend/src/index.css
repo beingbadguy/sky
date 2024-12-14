@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* font-family: "Satoshi", sans-serif; */
+  font-family: "General Sans", sans-serif;
+  /* font-family: "Bespoke Sans", sans-serif; */
+  /* font-family: "RX100", sans-serif; */
+}
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+html {
+  
+  scrollbar-width: thin; /* This will make the scrollbar thinner */
+}
+
+body::-webkit-scrollbar {
+  background-color: #8a2be2;
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* If horizontal scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #8a2be2;
+
+  background: #f0f0f0; /* Track color */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8a2be2; /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+  border: 3px solid #f0f0f0; /* Optional: adds a border between thumb and track */
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #8a2be2 #f0f0f0; /* Thumb and Track color */
+}
